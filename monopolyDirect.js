@@ -31,14 +31,6 @@ const db = pgp({
     },
 });
 
-db.any('SELECT NOW()')
-  .then((data) => {
-    console.log('Connection successful:', data);
-  })
-  .catch((err) => {
-    console.error('Database connection error:', err);
-  });
-  
 // Send the SQL command directly to Postgres.
 db.many('SELECT * FROM Player')
   .then((data) => {
