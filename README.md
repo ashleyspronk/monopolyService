@@ -34,4 +34,8 @@ Homework 3:
 a) /, /players, /players/id, /properties/id
 b)the POST /players is not idempotent
     the /, /players, /players/id, /properties GET functions are nullipotent
-c)
+c)Yes, because it uses https and the four CRUD things: get, post, put, and delete
+    it is also stateless
+    it also uses transfer.JSON to transfer data
+    it also has an explicit URI
+d)
