@@ -72,13 +72,14 @@ function readHelloMessage(req, res) {
 }
 
 function readPropertiesForPlayer(req, res, next) {
-  db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
-    .then((data) => {
-      res.send(data);
-    })
-    .catch((err) => {
-      next(err);
-    });
+  res.sent('WHY??');
+  // db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
+  //   .then((data) => {
+  //     res.send(data);
+  //   })
+  //   .catch((err) => {
+  //     next(err);
+  //   });
 }
 
 function readPlayers(req, res, next) {
