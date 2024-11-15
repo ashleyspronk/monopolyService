@@ -72,7 +72,7 @@ function readHelloMessage(req, res) {
 }
 
 function readPropertiesForPlayer(req, res, next) {
-  res.sent('WHY??');
+  res.send('WHY??');
   // db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
   //   .then((data) => {
   //     res.send(data);
