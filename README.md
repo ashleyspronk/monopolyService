@@ -26,3 +26,12 @@ data service, configure your Azure App Service to auto-deploy from the master/ma
 of your service repo. See the settings for this in the &ldquo;Deployment Center&rdquo; 
 on your Azure service dashboard.
  
+
+
+
+
+Homework 3:
+a) /, /players, /players/id, /properties/id
+b)the POST /players is not idempotent
+    the /, /players, /players/id, /properties GET functions are nullipotent
+c)
