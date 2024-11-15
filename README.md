@@ -26,11 +26,8 @@ data service, configure your Azure App Service to auto-deploy from the master/ma
 of your service repo. See the settings for this in the &ldquo;Deployment Center&rdquo; 
 on your Azure service dashboard.
  
-
-
-
-
 Homework 3:
+DONE BY ASHLEY SPRONK AND ALISHA START
 a) /, /players, /players/id, /properties/id
 b)the POST /players is not idempotent
     the /, /players, /players/id, /properties GET functions are nullipotent
@@ -38,4 +35,4 @@ c)Yes, because it uses https and the four CRUD things: get, post, put, and delet
     it is also stateless
     it also uses transfer.JSON to transfer data
     it also has an explicit URI
-d)
+d)no there is not
