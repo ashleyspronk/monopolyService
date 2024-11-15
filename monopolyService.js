@@ -72,7 +72,7 @@ function readHelloMessage(req, res) {
 }
 
 function readPropertiesForPlayer(req, res, next) {
-  db.many('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
+  db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
     .then((data) => {
       res.send(data);
     })
