@@ -52,7 +52,7 @@ router.get('/players/:id', readPlayer);
 router.put('/players/:id', updatePlayer);
 router.post('/players', createPlayer);
 router.delete('/players/:id', deletePlayer);
-router.get('/properties/:id', readPropertiesForPlayer);
+router.get('/properties', readPropertiesForPlayer);
 
 app.use(router);
 app.listen(port, () => console.log(`Listening on port ${port}`));
@@ -72,7 +72,7 @@ function readHelloMessage(req, res) {
 }
 
 function readPropertiesForPlayer(req, res, next) {
-  db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = ${id} AND Player.ID = ${id}')
+  db.oneOrNone('SELECT Property.playerID, Player.name, Property.name, Property.gameID FROM Property, Player WHERE playerID = 2')
     .then((data) => {
       res.send(data);
     })
